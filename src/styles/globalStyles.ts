@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+import { colors } from '../constants/Colors';
+
 export const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
@@ -8,16 +10,20 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-
+    end: {
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    input: {
+        backgroundColor: colors.backgroundColorInput,
+    },
     section: {
-        paddingHorizontal: 16,
+        paddingHorizontal: 18,
         paddingBottom: 20,
     },
-
     row: {
         flexDirection: 'row',
     },
-
     shadow: {
         shadowColor: 'rgba(0,0,0,0.35)',
         shadowOffset: {
